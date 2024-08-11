@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Layout from "./Layout";
 import FavoritesPage from "../pages/FavoritesPage";
 import IndexPage from "../pages/home-page/IndexPage";
@@ -8,7 +8,7 @@ import LoginPage from "../pages/LoginPage";
 import RequiredAuth from "../components/RequiredAuth";
 import DetailsMealPage from "../pages/DetailsMealPage";
 
-const RoutesApp = createBrowserRouter([
+const RoutesApp = createHashRouter([
   { path: "/login", element: <LoginPage /> },
   {
     path: "/",
